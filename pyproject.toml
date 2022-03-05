@@ -7,6 +7,8 @@ authors = ["Ediberto Ponce <ediberto01@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 Django = "^4.0.3"
+django-environ = "^0.8.1"
+
 
 [tool.poetry.dev-dependencies]
 
