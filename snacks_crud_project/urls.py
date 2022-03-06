@@ -13,9 +13,11 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+# from xml.etree.ElementInclude import include          !!!!!!! THIS IMPORT WAS AUTOFILLED BY MY DJANGO EXTENSION AND GAVE ME ALL SORTS OF ERRORS!!!!!! TOOK ME ABOUT 45 MINS TO TRACK THIS DOWN :(
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('snacks/', include('snacks.urls')),
 ]
